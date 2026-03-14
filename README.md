@@ -2,6 +2,8 @@
 
 Maintained detection rule packs for the first Carapace slice.
 
+Support Carapace on Patreon: <https://www.patreon.com/carapacehq>
+
 ## Scope
 
 This repo owns:
@@ -28,4 +30,3 @@ The initial source docs in `docs/` came from the earlier `ai-trust-layer` work a
 ## License
 
 Apache-2.0
-
