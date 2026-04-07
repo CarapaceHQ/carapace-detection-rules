@@ -1,0 +1,13 @@
+{
+  "id": "carapace.suspicious-source",
+  "title": "Suspicious forwarded source or proxy-like IP observed",
+  "severity": "medium",
+  "eventTypes": ["api_request"],
+  "condition": {
+    "kind": "suspicious_source",
+    "ipStartsWith": ["10.", "172.16.", "192.168."]
+  },
+  "outputFlags": ["suspicious_source", "proxy_source"],
+  "scoreContribution": 20,
+  "suggestedAction": "log"
+}

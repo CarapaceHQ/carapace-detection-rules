@@ -1,0 +1,14 @@
+{
+  "id": "carapace.repeated-auth-failure",
+  "title": "Repeated authentication failures on the same protected path",
+  "severity": "high",
+  "eventTypes": ["auth_failure"],
+  "condition": {
+    "kind": "repeated_auth_failure",
+    "failureCount": 3,
+    "windowMs": 60000
+  },
+  "outputFlags": ["auth_failure_burst", "credential_stuffing"],
+  "scoreContribution": 25,
+  "suggestedAction": "rate_limit"
+}

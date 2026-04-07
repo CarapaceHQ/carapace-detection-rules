@@ -1,8 +1,8 @@
 # Core Rule Pack
 
-This directory will hold the first maintained Carapace rules.
+This directory holds the first maintained Carapace rules.
 
-Planned first rules:
+Current starter rules:
 
 - velocity threshold
 - suspicious source or proxy flag
@@ -10,4 +10,3 @@ Planned first rules:
 - known prompt injection pattern hit
 - endpoint enumeration behavior
 - repeated retry anomaly
-

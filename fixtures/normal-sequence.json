@@ -1,0 +1,34 @@
+[
+  {
+    "type": "api_request",
+    "ts": "2026-01-01T00:00:00.000Z",
+    "actor": {
+      "ip": "198.18.0.10",
+      "userAgent": "demo-agent/1.0",
+      "method": "POST",
+      "path": "/v1/chat"
+    },
+    "request": {
+      "method": "POST",
+      "path": "/v1/chat",
+      "userAgent": "demo-agent/1.0"
+    },
+    "tags": []
+  },
+  {
+    "type": "policy_action",
+    "ts": "2026-01-01T00:00:00.100Z",
+    "actor": {
+      "ip": "198.18.0.10",
+      "userAgent": "demo-agent/1.0",
+      "method": "POST",
+      "path": "/v1/chat"
+    },
+    "policy": {
+      "action": "allow",
+      "score": 0,
+      "reasons": []
+    },
+    "tags": ["policy"]
+  }
+]

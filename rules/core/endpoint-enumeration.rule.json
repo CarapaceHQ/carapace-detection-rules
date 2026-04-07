@@ -1,0 +1,14 @@
+{
+  "id": "carapace.endpoint-enumeration",
+  "title": "One actor is probing too many distinct endpoints quickly",
+  "severity": "high",
+  "eventTypes": ["api_request"],
+  "condition": {
+    "kind": "endpoint_enumeration",
+    "distinctPaths": 4,
+    "windowMs": 60000
+  },
+  "outputFlags": ["endpoint_enumeration", "reconnaissance"],
+  "scoreContribution": 20,
+  "suggestedAction": "log"
+}

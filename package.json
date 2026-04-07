@@ -1,0 +1,18 @@
+{
+  "name": "@carapacehq/detection-rules",
+  "version": "0.1.0",
+  "description": "Starter rule packs and local evaluators for the first Carapace slice.",
+  "type": "module",
+  "files": [
+    "rules",
+    "fixtures",
+    "src"
+  ],
+  "exports": {
+    ".": "./src/index.js",
+    "./core": "./src/core-rules.js"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}

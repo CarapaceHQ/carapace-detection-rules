@@ -1,0 +1,13 @@
+{
+  "id": "carapace.velocity-threshold",
+  "title": "Velocity threshold crossed on a single route",
+  "severity": "high",
+  "eventTypes": ["velocity_burst"],
+  "condition": {
+    "kind": "velocity_threshold",
+    "hitCount": 5
+  },
+  "outputFlags": ["velocity_burst", "traffic_spike"],
+  "scoreContribution": 30,
+  "suggestedAction": "rate_limit"
+}

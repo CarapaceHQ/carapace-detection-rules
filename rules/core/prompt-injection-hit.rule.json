@@ -1,0 +1,12 @@
+{
+  "id": "carapace.prompt-injection-hit",
+  "title": "Known prompt injection pattern matched",
+  "severity": "critical",
+  "eventTypes": ["prompt_injection_signal"],
+  "condition": {
+    "kind": "event_presence"
+  },
+  "outputFlags": ["prompt_injection", "instruction_override_attempt"],
+  "scoreContribution": 80,
+  "suggestedAction": "block"
+}

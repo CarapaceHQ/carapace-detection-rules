@@ -1,0 +1,14 @@
+{
+  "id": "carapace.repeated-retry-anomaly",
+  "title": "The same actor is hammering the same request path like a retry loop",
+  "severity": "medium",
+  "eventTypes": ["api_request"],
+  "condition": {
+    "kind": "repeated_retry",
+    "attemptCount": 3,
+    "windowMs": 15000
+  },
+  "outputFlags": ["retry_anomaly", "automation_loop"],
+  "scoreContribution": 15,
+  "suggestedAction": "log"
+}
