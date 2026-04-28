@@ -46,6 +46,14 @@ Each rule ships with the minimum metadata locked in the steering backlog:
 
 ## Local Usage
 
+Install the starter rule pack:
+
+```bash
+npm install @carapacehq/detection-rules
+```
+
+Evaluate a sequence of Carapace events:
+
 ```js
 import { coreRules, createRuleEvaluator } from "@carapacehq/detection-rules";
 
@@ -65,6 +73,7 @@ The returned outcome includes:
 
 ```bash
 npm test
+npm pack --dry-run
 ```
 
 ## License

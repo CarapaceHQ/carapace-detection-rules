@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Starter rule packs and local evaluators for the first Carapace slice.",
   "type": "module",
+  "license": "Apache-2.0",
   "files": [
     "rules",
     "fixtures",
@@ -12,6 +13,14 @@
     ".": "./src/index.js",
     "./core": "./src/core-rules.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarapaceHQ/carapace-detection-rules.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CarapaceHQ/carapace-detection-rules/issues"
+  },
+  "homepage": "https://github.com/CarapaceHQ/carapace-detection-rules#readme",
   "scripts": {
     "test": "node --test"
   }
