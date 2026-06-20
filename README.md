@@ -13,10 +13,11 @@ This repo owns:
 - scoring contribution semantics
 - fixtures that prove suspicious vs. normal behavior
 - a local evaluator that can score the starter rules without external services
+- stable rule-hit metadata for agent action receipts
 
-## Seed Material
+## Source Material
 
-The initial source docs in `docs/` came from the earlier `ai-trust-layer` work and will be normalized here:
+The initial source docs in `docs/` came from earlier `ai-trust-layer` work and have been narrowed into the first local rule pack:
 
 - `docs/Detection-Rule-Format.md`
 - `docs/Detection-Engine.md`
@@ -69,12 +70,16 @@ The returned outcome includes:
 - `reasons`
 - `action`
 
+The `hits` array is intended to be receipt-safe metadata: rule id, title, severity, event type, flags, score contribution, and suggested action.
+
 ## Development
 
 ```bash
 npm test
 npm pack --dry-run
 ```
+
+Before publishing, include this package in the packed-tarball smoke test from the steering release sequence.
 
 ## License
 
